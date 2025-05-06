@@ -18,13 +18,13 @@
 
 ⚡ Fun fact: mosquitoes kill even more people than humans do!  Kinda makes a man humble, doesn't it? 🦟
 
- </div>
+ </div>   
  
 <div align="center"> 
   <a href="mailto:andrew.d.covey.student@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
   </a>
-  <a href="www.linkedin.com/in/andrew-covey-65049935b" target="_blank">
+&nbsp;&nbsp;<a href="www.linkedin.com/in/andrew-covey-65049935b" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
   </a>
 
