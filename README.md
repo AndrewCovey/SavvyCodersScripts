@@ -10,13 +10,13 @@
 
 <div align="center">
  
- 🔭 I’m currently working on expediting the extinction of Marmota monax
+ 🔭 I’m currently working on expediting the extinction of Marmota monax 🐿️
  
- 🌱 I’m currently learning how to use ET-MP hand grenades.
+ 🌱 I’m currently learning how to use ET-MP hand grenades 💣👍🏻
 
-💬 Ask me about great heirloom seeds to grow in your garden; get them [here](https://www.rareseeds.com/)**
+💬 Ask me about great heirloom seeds to grow in your garden; get them [here](https://www.rareseeds.com/) 🌰
 
-⚡ Fun fact: mosquitoes kill even more people than humans do!  Kinda makes a man humble, doesn't it?
+⚡ Fun fact: mosquitoes kill even more people than humans do!  Kinda makes a man humble, doesn't it? 🦟
 
  </div>
  
