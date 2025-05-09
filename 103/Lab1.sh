@@ -3,7 +3,7 @@
 # Script: Ops 201 Class 01 Ops Challenge Solution
 # Author:  Andrew Covey
 # Date of latest revision:  5 / 8 / 2025
-# Purpose: Print a string to the terminal
+# Purpose: Print a string to the terminal 
 
 echo “Hello, world!”
 
