@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -en "Basic math script...  Enter two numbers and an basic math operator.\nEnter a number: "
+echo -en "Basic math script...  Enter two integers and a basic math operator.\nEnter a number: "
 read anum1
 
 echo -n "Enter another number: "
