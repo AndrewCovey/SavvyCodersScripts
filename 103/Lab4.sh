@@ -1,12 +1,12 @@
 #!/bin/bash
 
-echo -en "Basic math script...  Enter two integers and a basic math operator.\nEnter a number: "
+echo -en "Basic math script...  Enter two integers and a basic math operator.\nEnter an integer: "
 read anum1
 
-echo -n "Enter another number: "
+echo -n "Enter another integer: "
 read anum2
 
-echo -n "New enter a mathematical operator (+, -, *, or /): "
+echo -n "New enter a mathematical operator ('+', '-', '*', or '/'): "
 read moper
 
 let answer=$anum1$moper$anum2
