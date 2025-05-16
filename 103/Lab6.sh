@@ -1,4 +1,3 @@
-  GNU nano 8.4                                                                      Lab6.sh                                                                               
 #!/bin/bash
 
 # Install whois on your Ubuntu
