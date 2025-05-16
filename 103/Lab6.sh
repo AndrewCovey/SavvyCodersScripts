@@ -1,3 +1,4 @@
+  GNU nano 8.4                                                                      Lab6.sh                                                                               
 #!/bin/bash
 
 # Install whois on your Ubuntu
@@ -11,23 +12,25 @@
 # Run nslookup against the user input string.
 # Output the results to a single .txt file and open it with your favorite text editor.
 
-do_report ($uname) {
+function do_report () {
 
-echo -en "Basic math script...  Enter two integers and a basic math operator.\nEnter an integer: "
-read anum1
+  echo -e "WHOIS OUTPUT\n------------------------------------------------------------------------------\n" >> $2
+  eval "whois $1" >> $2
 
-echo -n "Enter another integer: "
-read anum2
+  echo -e "\n\nDIG OUTPUT\n------------------------------------------------------------------------------\n" >> $2
+  eval "dig $1" >> $2
 
-echo -n "New enter a mathematical operator ('+', '-', '*', or '/'): "
-read moper
+  echo -e "\n\nHOST OUTPUT\n------------------------------------------------------------------------------\nhost" >> $2
+  eval "host $1" >> $2
 
-let answer=$anum1$moper$anum2
-echo "The answer to $anum1 $moper $anum2 is: $answer"
+  echo -e "\n\nNSLOOKUP OUTPUT\n------------------------------------------------------------------------------\nnslookup" >> $2
+  eval "nslookup $1" >> $2
+
+  echo -e "Report generated in logfile: $2\nThank you and have a nice day!\n"
 
 }
 
-do_math
+do_report $1 $2
 
 # This is here to keep git bash from insta-closing the powershell window before anyone can see the output...
 read -p "Press Enter to continue... " </dev/tty
