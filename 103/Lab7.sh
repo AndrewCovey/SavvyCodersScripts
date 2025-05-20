@@ -8,7 +8,7 @@
 # Navigates to the directory input by the user and changes all files inside it to the input setting.
 # Prints to the screen the directory contents and the new permissions settings of everything in the directory or file you selected.
 
-echo -e "Please provide a directory with files to change permissions...\n"
+echo -e "Please provide a full directory name, with trailing '\', containing files to change permissions..."
 read duhrectory
 
 echo -e "Please provide a permission numbers (eg. 777, 755) for the files in that directory..."
@@ -16,10 +16,9 @@ read permnos
 
 eval "chmod -R $permnos $duhrectory"
 
-echo -e "\n\n Just so'z you know, here's what's in that directory:\n\n
+echo -e "\nJust so'z you know, these are the files in that directory:"
 
-eval "ls -l $duhrectory" >> STDOUT
-
+eval "ls -l $duhrectory" | tail -n +2
 
 # This is here to keep git bash from insta-closing the powershell window before anyone can see the output...
 read -p "Press Enter to continue... " </dev/tty
