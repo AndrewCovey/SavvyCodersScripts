@@ -8,12 +8,13 @@
 # Can you do this with an until loop to have it execute a specfic number of times?
 
 while true
-  ping -c 10 127.0.0.1
+do
+  ping 127.0.0.1
 done
 
 # STRETCH
 
-# safe version for demonstration: forks a few pings processes to localhost, and stops running once it's all accomplished
+# safe version for demonstration: forks a few pings processes to localhost, and stops running once it's all accomplished.  This likes to run as admin/root b/c of the 
 #for i in {1..5}; do
 #  ping -c 4 127.0.0.1 > /dev/null &
 #  echo "Started ping process $i"
@@ -30,8 +31,9 @@ done
 # very not safe version for edification only: forks as many ping processes as it can to localhost, and stops running pretty much never ...
 
 #while true
+#do
 #  ping -c 4 127.0.0.1 > /dev/null &
-#  echo "Started ping process $i"
+#  echo "Enjoy the ride..."
 #done
 
 #wait
