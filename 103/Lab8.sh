@@ -14,7 +14,8 @@ done
 
 # STRETCH
 
-# safe version for demonstration: forks a few pings processes to localhost, and stops running once it's all accomplished.  This likes to run as admin/root b/c of the 
+# Safe version for demonstration: forks a few pings processes to localhost, and stops running once it's all accomplished. 
+# Runs quietly also This likes to run as admin/root b/c of the -c option with ping.
 #for i in {1..5}; do
 #  ping -c 4 127.0.0.1 > /dev/null &
 #  echo "Started ping process $i"
@@ -28,7 +29,7 @@ done
 
 # SUPER-DUPER STRETCH  
 
-# very not safe version for edification only: forks as many ping processes as it can to localhost, and stops running pretty much never ...
+# Very not safe version for edification only: forks as many ping processes as it can to localhost, and stops running quietly pretty much never ...
 
 #while true
 #do
