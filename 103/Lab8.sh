@@ -29,11 +29,12 @@ done
 
 # SUPER-DUPER STRETCH  
 
-# Very not safe version for edification only: forks as many ping processes as it can to localhost, and stops running quietly pretty much never ...
+# Very not safe version for edification only: forks as many ping processes as it can to localhost, and stops running
+# pretty much never...
 
 #while true
 #do
-#  ping -c 4 127.0.0.1 > /dev/null &
+#  ping -c 25 127.0.0.1 > /dev/null &
 #  echo "Enjoy the ride..."
 #done
 
