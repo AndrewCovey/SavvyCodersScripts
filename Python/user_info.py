@@ -12,4 +12,4 @@ if school_stat == "Y" or school_stat == "y":
 if school_stat == "N" or school_stat == "n":
     school = " not in "
 
-print ("\n\nHello, " + name + ".\nYou are " + age + " years old, and you are" + school + "school right now.\nYou are interested in the " + fav_lang + " programming language.\nHave a nice day!")
+print ("\n\nHello, " + name + ".\nYou are " + age + " years old.\nYou are" + school + "school right now.\nYou are interested in the " + fav_lang + " programming language.\n\nHave a nice day!")
