@@ -7,6 +7,7 @@
 # Stretch Goal:
 # Can you do this with an until loop to have it execute a specfic number of times?
 
+
 while true
 do
   ping 127.0.0.1
@@ -16,6 +17,7 @@ done
 
 # Safe version for demonstration: forks a few pings processes to localhost, and stops running once it's all accomplished. 
 # Runs quietly also This likes to run as admin/root b/c of the -c option with ping.
+
 #for i in {1..5}; do
 #  ping -c 4 127.0.0.1 > /dev/null &
 #  echo "Started ping process $i"

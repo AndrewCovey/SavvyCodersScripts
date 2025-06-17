@@ -10,7 +10,7 @@
 # The sum of any two sides will be greater than the third.
 # Output Format
 # One word: either "SCALENE" or "EQUILATERAL" or "ISOSCELES" (quotation marks excluded).
-# Hint &&(and) ||(or)
+# Hint && (and) || (or)
 
 read -p "Please provide side lengths for a triangle, starting with the first side: " num1
 read -p "And the second side: " num2
