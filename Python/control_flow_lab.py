@@ -7,9 +7,9 @@ Multi line comments can be done by using unassigned string literals; just sorta 
 
 age = int(input("\nWhat is your age? "))
 
-if age > 18:
+if age < 18:
     print("\nYou are a minor!\n")
-elif age <= 19 and age >= 64:
+elif age >= 19 and age <= 64:
     print("\nYou are an adult\n")
 elif age >= 65:
     print("\nYou are a senior\n")
