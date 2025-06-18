@@ -20,7 +20,7 @@ else:
 # Task 2
 
 username = 'Mister User'
-bool(is_logged_in) = '1'
+is_logged_in = True
 
 if is_logged_in:
     print("\nWell, " + username + " you happen to be logged in!");
