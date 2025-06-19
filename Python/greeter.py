@@ -1,11 +1,19 @@
-# Task 1 & 2
+# Task 1
 
-def greet (name):
+def greet ():
+    print ('Hello, and Welcome!')
+    return 1
+
+greet()
+
+# Task 2
+
+def personal_greet (name):
     print ('Hello ' + name.title() + '!')
     return 1
 
-greet('Andrew')
-greet('casey')
+personal_greet('Andrew')
+personal_greet('casey')
 
 # Task 3
 
