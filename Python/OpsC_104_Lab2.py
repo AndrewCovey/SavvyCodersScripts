@@ -47,6 +47,6 @@ if (num1 == num2):
     if (num1 != num2):
         print ("This should never happen")
     else:
-    print("Reality is not broken")
-    
+        print("Reality is not broken")
+
 # Hint:  a = int(input("Enter a number "))
