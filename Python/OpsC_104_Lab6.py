@@ -14,7 +14,6 @@
 # and the magician should say the following words: "Well done, muggle! You are free now."
 # The magician is counting on you! Don't disappoint him.
 
-
 import random
 
 magNo=random.randint(2,19)
@@ -28,7 +27,7 @@ while 1:
     guess=int(input("Your guess: "))
 
     if(guess == magNo):
-        print("Well done, muggle! You are free now.  You guessed the number in " + str(times) + " attempts\n")
+        print("Well done, muggle! You are free now.  You guessed the number in " + str(times) + " attempts.\n")
         break
     elif(guess<magNo):
         print("Ha ha!  You're stuck in my loop!  You've guessed " + str(times) + " times.  Hint: My number is greater.")
