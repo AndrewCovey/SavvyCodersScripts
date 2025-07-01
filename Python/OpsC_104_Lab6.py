@@ -17,18 +17,22 @@
 
 import random
 
-magNo=random.randint(2,99)
+magNo=random.randint(2,19)
 
-print('\n\nA magician has selected a number (integer) which you must guess to exit the loop.  So, guess a number then...\n')
+print('\n\nA magician has selected a number (integer, 1-20) which you must guess to exit the loop.  So, guess a number then...\n')
+
+times=1
 
 while 1:
 
     guess=int(input("Your guess: "))
 
     if(guess == magNo):
-        print("Well done, muggle! You are free now.\n")
+        print("Well done, muggle! You are free now.  You guessed the number in " + str(times) + " attempts\n")
         break
     elif(guess<magNo):
-        print("Ha ha!  You're stuck in my loop!  My number is greater.")
+        print("Ha ha!  You're stuck in my loop!  You've guessed " + str(times) + " times.  Hint: My number is greater.")
+        times+=1
     elif(guess>magNo):
-        print("Ha ha!  You're stuck in my loop!  My number is lesser...")
+        print("Ha ha!  You're stuck in my loop!  You've guessed " + str(times) + " times.  Hint: My number is lesser...")
+        times+=1
