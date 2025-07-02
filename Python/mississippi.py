@@ -12,4 +12,4 @@ def countdown(s,t):
         time.sleep(1)
     print("Ready or not here I come!")
 
-countdown(0,5)
+countdown(1,5)
