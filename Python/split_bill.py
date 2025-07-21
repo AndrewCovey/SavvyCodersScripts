@@ -13,5 +13,8 @@
 #Write your code below this line 👇
 
 ppl = int(input("How many people are paying? "))
-cost = float(input("What was the totalfor the bill? "))
-print("Each person should pay " + str(round((cost/ppl),2)))
+cost = float(input("What was the total for the bill? "))
+tip = int(input("What percent will you tip? "))
+tot = (1 + (tip / 100)) * cost
+ans = round(tot/ppl,3)
+print("Each person should pay " + str(ans))
