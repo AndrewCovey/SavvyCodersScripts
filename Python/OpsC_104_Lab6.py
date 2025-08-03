@@ -16,7 +16,7 @@
 
 import random
 
-magNo=random.randint(2,19)
+magNo=random.randint(1,20)
 
 print('\n\nA magician has selected a number (integer, 1-20) which you must guess to exit the loop.  So, guess a number then...\n')
 

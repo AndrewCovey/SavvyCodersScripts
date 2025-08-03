@@ -3,13 +3,13 @@
 
 yes_no = ["yes", "no"]
 directions = ["left", "right", "forward", "backward"]
- 
+
 # Introduction
 name = input("What is your name, adventurer?\n")
 print("Greetings, " + name + ". Let us go on a quest!")
 print("You find yourself on the edge of a dark forest.")
 print("Can you find your way through?\n")
- 
+
 # Start of game
 response = ""
 while response not in yes_no:
@@ -21,8 +21,18 @@ while response not in yes_no:
         quit()
     else: 
         print("I didn't understand that.\n")
- 
+
 # Next part of game
 response = ""
+while response not in yes_no:
+    response = input("Which direction will you go?\nleft, right, forward, backward\n")
+    if response == "yes":
+        print("You head into the forest. You hear crows cawwing in the distance.\n")
+    elif response == "no":
+        print("You are not ready for this quest. Goodbye, " + name + ".")
+        quit()
+    else: 
+        print("I didn't understand that.\n")
+
 
 # Use if else statment from here to take you on a journey and have fun with it
